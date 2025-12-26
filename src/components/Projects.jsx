@@ -65,14 +65,14 @@ const Projects = () => {
       imageAlt: 'Heart disease prediction dashboard illustration'
     },
     {
-      title: 'BlackJack Game',
-      description: 'Built an interactive Blackjack game in Python using Pygame with real-time rendering, dealer logic, hit/stand actions, score calculation, and bust detection, along with scalable card handling and multiple game states for smooth gameplay and replay support.',
+      title: 'Rentscope',
+      description: 'RentScope is a map-first assistant that helps students choose neighbourhoods by visualizing rent, commute, safety signals, and amenities; producing ranked, explainable recommendations instead of scattered listings.',
       techStack: [
         { name: 'Python', icon: iconPython },
-        { name: 'Pygame', icon: iconPygame },
+        { name: 'React', icon: iconReact },
         { name: 'Git', icon: iconGit }
       ],
-      githubLink: 'https://github.com/arymn7/blackjack-pygame',
+      githubLink: 'https://github.com/arymn7/rentscope',
       image: projectBlackjack,
       imageAlt: 'Playing cards illustration for a Blackjack game'
     },
@@ -89,7 +89,7 @@ const Projects = () => {
     },
     {
       title: 'Portfolio Website',
-      description: 'Designed and built a responsive personal portfolio website with smooth section navigation, project highlights, and a clean visual system.',
+      description: 'Responsive personal portfolio website with smooth section navigation, project highlights, and a clean visual system.',
       techStack: [
         { name: 'React', icon: iconReact },
         { name: 'JavaScript', icon: iconJs },
