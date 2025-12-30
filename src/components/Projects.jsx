@@ -4,6 +4,7 @@ import './Projects.css';
 const Projects = () => {
   const projectsRef = useRef(null);
   const [activeTab, setActiveTab] = useState('projects');
+  const publicUrl = process.env.PUBLIC_URL || '';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -38,51 +39,51 @@ const Projects = () => {
       title: 'Heart Disease Prediction',
       description: 'Developed a machine learning pipeline using logistic regression to predict heart-disease risk from 300+ patient records, achieving ~85% accuracy with an 80/20 train/test split.',
       techStack: [
-        { name: 'Python', icon: '/tech/python.svg' },
-        { name: 'NumPy', icon: '/tech/numpy.svg' },
-        { name: 'Pandas', icon: '/tech/pandas.svg' },
-        { name: 'Scikit Learn', icon: '/tech/scikitlearn.svg' },
-        { name: 'Git', icon: '/tech/git.svg' }
+        { name: 'Python', icon: `${publicUrl}/tech/python.svg` },
+        { name: 'NumPy', icon: `${publicUrl}/tech/numpy.svg` },
+        { name: 'Pandas', icon: `${publicUrl}/tech/pandas.svg` },
+        { name: 'Scikit Learn', icon: `${publicUrl}/tech/scikitlearn.svg` },
+        { name: 'Git', icon: `${publicUrl}/tech/git.svg` }
       ],
       githubLink: 'https://github.com/arymn7/heart_disease_prediction',
-      image: '/project-heart.png',
+      image: `${publicUrl}/project-heart.png`,
       imageAlt: 'Heart disease prediction dashboard illustration'
     },
     {
       title: 'BlackJack Game',
       description: 'Built an interactive Blackjack game in Python using Pygame with real-time rendering, dealer logic, hit/stand actions, score calculation, and bust detection, along with scalable card handling and multiple game states for smooth gameplay and replay support.',
       techStack: [
-        { name: 'Python', icon: '/tech/python.svg' },
-        { name: 'Pygame', icon: '/tech/pygame.png' },
-        { name: 'Git', icon: '/tech/git.svg' }
+        { name: 'Python', icon: `${publicUrl}/tech/python.svg` },
+        { name: 'Pygame', icon: `${publicUrl}/tech/pygame.png` },
+        { name: 'Git', icon: `${publicUrl}/tech/git.svg` }
       ],
       githubLink: 'https://github.com/arymn7/blackjack-pygame',
-      image: '/project-blackjack.png',
+      image: `${publicUrl}/project-blackjack.png`,
       imageAlt: 'Playing cards illustration for a Blackjack game'
     },
     {
       title: 'Car Marketplace',
       description: 'A terminal-based Java application that allows users to list, search, buy, and sell vehicles through a text-based interface. Built with object-oriented design.',
       techStack: [
-        { name: 'Java', icon: '/tech/java.svg' },
-        { name: 'Git', icon: '/tech/git.svg' }
+        { name: 'Java', icon: `${publicUrl}/tech/java.svg` },
+        { name: 'Git', icon: `${publicUrl}/tech/git.svg` }
       ],
       githubLink: 'https://github.com/arymn7/car-marketplace',
-      image: '/project-car.png',
+      image: `${publicUrl}/project-car.png`,
       imageAlt: 'Car marketplace project preview'
     },
     {
       title: 'Portfolio Website',
       description: 'Designed and built a responsive personal portfolio website with smooth section navigation, project highlights, and a clean visual system.',
       techStack: [
-        { name: 'React', icon: '/tech/react.svg' },
-        { name: 'JavaScript', icon: '/tech/javascript.svg' },
-        { name: 'CSS', icon: '/tech/css.svg' },
-        { name: 'HTML', icon: '/tech/html.svg' },
-        { name: 'Git', icon: '/tech/git.svg' }
+        { name: 'React', icon: `${publicUrl}/tech/react.svg` },
+        { name: 'JavaScript', icon: `${publicUrl}/tech/javascript.svg` },
+        { name: 'CSS', icon: `${publicUrl}/tech/css.svg` },
+        { name: 'HTML', icon: `${publicUrl}/tech/html.svg` },
+        { name: 'Git', icon: `${publicUrl}/tech/git.svg` }
       ],
       githubLink: 'https://github.com/arymn7/portfolio-website',
-      image: '/project-portfolio.png',
+      image: `${publicUrl}/project-portfolio.png`,
       imageAlt: 'Portfolio website layout illustration'
     }
   ];
@@ -164,7 +165,7 @@ const Projects = () => {
           <div className="resume-viewer">
             <div className="resume-actions">
               <a
-                href="/Resume_AS.pdf"
+                href={`${publicUrl}/Resume_AS.pdf`}
                 className="resume-action"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -172,7 +173,7 @@ const Projects = () => {
                 View externally
               </a>
               <a
-                href="/Resume_AS.pdf"
+                href={`${publicUrl}/Resume_AS.pdf`}
                 className="resume-action secondary"
                 download
               >
@@ -182,7 +183,7 @@ const Projects = () => {
             <div className="resume-frame">
               <iframe
                 title="Resume PDF"
-                src="/Resume_AS.pdf#view=fitH"
+                src={`${publicUrl}/Resume_AS.pdf#view=fitH`}
                 loading="lazy"
               ></iframe>
             </div>

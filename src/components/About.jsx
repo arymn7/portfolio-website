@@ -3,6 +3,7 @@ import './About.css';
 
 const About = () => {
   const aboutRef = useRef(null);
+  const publicUrl = process.env.PUBLIC_URL || '';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,30 +29,30 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: 'C', icon: '/tech/c.svg' },
-    { name: 'C++', icon: '/tech/cpp.svg' },
-    { name: 'Python', icon: '/tech/python.svg' },
-    { name: 'Java', icon: '/tech/java.svg' },
-    { name: 'HTML', icon: '/tech/html.svg' },
-    { name: 'CSS', icon: '/tech/css.svg' },
-    { name: 'JavaScript', icon: '/tech/javascript.svg' },
-    { name: 'Racket', icon: '/tech/racket.svg' },
-    { name: 'SQL', icon: '/tech/sql.svg' },
-    { name: 'Git', icon: '/tech/git.svg' },
-    { name: 'Pandas', icon: '/tech/pandas.svg' },
-    { name: 'Scikit Learn', icon: '/tech/scikitlearn.svg' },
-    { name: 'NumPy', icon: '/tech/numpy.svg' },
-    { name: 'Pygame', icon: '/tech/pygame.png' },
-    { name: 'React', icon: '/tech/react.svg' },
-    { name: 'NodeJS', icon: '/tech/nodejs.svg' },
-    { name: 'GitHub', icon: '/tech/github.svg' },
-    { name: 'VS Code', icon: '/tech/vscode.svg' },
-    { name: 'IntelliJ IDEA', icon: '/tech/intellij.svg' },
-    { name: 'PyCharm', icon: '/tech/pycharm.svg' },
-    { name: 'Linux', icon: '/tech/linux.svg' },
-    { name: 'Vim', icon: '/tech/vim.svg' },
-    { name: 'Power BI', icon: '/tech/powerbi.svg' },
-    { name: 'Excel', icon: '/tech/excel.svg' }
+    { name: 'C', icon: `${publicUrl}/tech/c.svg` },
+    { name: 'C++', icon: `${publicUrl}/tech/cpp.svg` },
+    { name: 'Python', icon: `${publicUrl}/tech/python.svg` },
+    { name: 'Java', icon: `${publicUrl}/tech/java.svg` },
+    { name: 'HTML', icon: `${publicUrl}/tech/html.svg` },
+    { name: 'CSS', icon: `${publicUrl}/tech/css.svg` },
+    { name: 'JavaScript', icon: `${publicUrl}/tech/javascript.svg` },
+    { name: 'Racket', icon: `${publicUrl}/tech/racket.svg` },
+    { name: 'SQL', icon: `${publicUrl}/tech/sql.svg` },
+    { name: 'Git', icon: `${publicUrl}/tech/git.svg` },
+    { name: 'Pandas', icon: `${publicUrl}/tech/pandas.svg` },
+    { name: 'Scikit Learn', icon: `${publicUrl}/tech/scikitlearn.svg` },
+    { name: 'NumPy', icon: `${publicUrl}/tech/numpy.svg` },
+    { name: 'Pygame', icon: `${publicUrl}/tech/pygame.png` },
+    { name: 'React', icon: `${publicUrl}/tech/react.svg` },
+    { name: 'NodeJS', icon: `${publicUrl}/tech/nodejs.svg` },
+    { name: 'GitHub', icon: `${publicUrl}/tech/github.svg` },
+    { name: 'VS Code', icon: `${publicUrl}/tech/vscode.svg` },
+    { name: 'IntelliJ IDEA', icon: `${publicUrl}/tech/intellij.svg` },
+    { name: 'PyCharm', icon: `${publicUrl}/tech/pycharm.svg` },
+    { name: 'Linux', icon: `${publicUrl}/tech/linux.svg` },
+    { name: 'Vim', icon: `${publicUrl}/tech/vim.svg` },
+    { name: 'Power BI', icon: `${publicUrl}/tech/powerbi.svg` },
+    { name: 'Excel', icon: `${publicUrl}/tech/excel.svg` }
   ];
 
   return (
