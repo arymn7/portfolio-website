@@ -1,106 +1,95 @@
-# Portfolio Website - Aryaman Sharma
+﻿# Portfolio Website - Aryaman Sharma
 
-A modern, sleek portfolio website with a dark theme and purple accents, built with React.
+A minimal, dark-themed portfolio built with React.
 
 ## Features
 
-- 🎨 Dark theme with purple neon accents
-- 📱 Fully responsive design
-- ⚡ Smooth animations and transitions
-- 🔗 Navigation with active section highlighting
-- 🎯 Modern, tech-focused UI/UX
+- Clean, two-column hero with profile image
+- Projects grid with tech chips and image previews
+- Resume tab with in-page PDF viewer plus download/external link
+- Education, About, and Contact sections with structured content
+- Smooth section reveals and active nav highlighting
 
-## Technologies Used
+## Tech Stack
 
 - React 18
-- HTML5
-- CSS3 (with CSS Variables)
 - JavaScript (ES6+)
+- HTML5 / CSS3
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
+- Node.js 14+
+- npm (or yarn)
 
-### Installation
+### Install
 
-1. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Start the development server:
+### Run
+
 ```bash
 npm start
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open `http://localhost:3000` in your browser.
 
-### Build for Production
+### Build
 
 ```bash
 npm run build
 ```
 
-This creates an optimized production build in the `build` folder.
-
 ## Customization
 
-### Update Profile Image
+### Profile image
 
-Replace the placeholder image in `src/components/Home.jsx`:
-```jsx
-<img
-  src="your-image-url-here"
-  alt="Aryaman Sharma"
-  className="profile-image"
-/>
-```
+Replace `public/pfp.jpg` with your own photo.
 
-### Update Contact Links
+### Projects
 
-Edit the links in `src/components/Contact.jsx`:
-- Email: Update the `mailto:` link
-- GitHub: Update the GitHub URL
-- LinkedIn: Update the LinkedIn URL
+Edit the `projects` array in `src/components/Projects.jsx` to change titles, descriptions, images, tech chips, and GitHub links.
 
-### Update Projects
+### Resume
 
-Modify the `projects` array in `src/components/Projects.jsx` to showcase your actual projects.
+Replace `public/Resume_AS.pdf` with your own resume file. The Resume tab embeds this file and provides download/external links.
 
-### Color Scheme
+### Contact links
 
-The color palette is defined in `src/index.css` using CSS variables. You can customize:
-- `--bg-black`: Main background color
-- `--purple-primary`: Primary purple accent
-- `--purple-hover`: Hover state purple
-- And more...
+Update the URLs in `src/components/Contact.jsx`.
+
+### Colors and typography
+
+Theme variables and fonts live in `src/index.css`.
 
 ## Project Structure
 
 ```
 portfolio-website/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Home.jsx
-│   │   ├── Projects.jsx
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   └── *.css (component styles)
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.js
-│   └── index.css
-├── package.json
-└── README.md
+  public/
+    index.html
+    Resume_AS.pdf
+    pfp.jpg
+  src/
+    components/
+      About.jsx
+      Contact.jsx
+      Education.jsx
+      Home.jsx
+      Navbar.jsx
+      Projects.jsx
+      *.css
+    App.jsx
+    App.css
+    index.js
+    index.css
+  package.json
+  README.md
 ```
 
 ## License
 
-This project is open source and available for personal use.
-
+Personal use only.
