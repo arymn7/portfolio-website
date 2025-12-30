@@ -3,7 +3,7 @@ import projectHeart from '../assets/project-heart.png';
 import projectBlackjack from '../assets/project-blackjack.png';
 import projectCar from '../assets/project-car.png';
 import projectPortfolio from '../assets/project-portfolio.png';
-import resumePdf from '../assets/Resume_AS.pdf';
+import resumePdf from '../assets/Resume_AS_2025.pdf';
 import iconPython from '../assets/tech/python.svg';
 import iconNumpy from '../assets/tech/numpy.svg';
 import iconPandas from '../assets/tech/pandas.svg';
@@ -210,6 +210,7 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
 
 
