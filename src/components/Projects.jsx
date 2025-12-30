@@ -1,10 +1,25 @@
-﻿import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import projectHeart from '../assets/project-heart.png';
+import projectBlackjack from '../assets/project-blackjack.png';
+import projectCar from '../assets/project-car.png';
+import projectPortfolio from '../assets/project-portfolio.png';
+import resumePdf from '../assets/Resume_AS.pdf';
+import iconPython from '../assets/tech/python.svg';
+import iconNumpy from '../assets/tech/numpy.svg';
+import iconPandas from '../assets/tech/pandas.svg';
+import iconScikitLearn from '../assets/tech/scikitlearn.svg';
+import iconGit from '../assets/tech/git.svg';
+import iconPygame from '../assets/tech/pygame.png';
+import iconJava from '../assets/tech/java.svg';
+import iconReact from '../assets/tech/react.svg';
+import iconJs from '../assets/tech/javascript.svg';
+import iconCss from '../assets/tech/css.svg';
+import iconHtml from '../assets/tech/html.svg';
 import './Projects.css';
 
 const Projects = () => {
   const projectsRef = useRef(null);
   const [activeTab, setActiveTab] = useState('projects');
-  const publicUrl = process.env.PUBLIC_URL || '';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,51 +54,51 @@ const Projects = () => {
       title: 'Heart Disease Prediction',
       description: 'Developed a machine learning pipeline using logistic regression to predict heart-disease risk from 300+ patient records, achieving ~85% accuracy with an 80/20 train/test split.',
       techStack: [
-        { name: 'Python', icon: `${publicUrl}/tech/python.svg` },
-        { name: 'NumPy', icon: `${publicUrl}/tech/numpy.svg` },
-        { name: 'Pandas', icon: `${publicUrl}/tech/pandas.svg` },
-        { name: 'Scikit Learn', icon: `${publicUrl}/tech/scikitlearn.svg` },
-        { name: 'Git', icon: `${publicUrl}/tech/git.svg` }
+        { name: 'Python', icon: iconPython },
+        { name: 'NumPy', icon: iconNumpy },
+        { name: 'Pandas', icon: iconPandas },
+        { name: 'Scikit Learn', icon: iconScikitLearn },
+        { name: 'Git', icon: iconGit }
       ],
       githubLink: 'https://github.com/arymn7/heart_disease_prediction',
-      image: `${publicUrl}/project-heart.png`,
+      image: projectHeart,
       imageAlt: 'Heart disease prediction dashboard illustration'
     },
     {
       title: 'BlackJack Game',
       description: 'Built an interactive Blackjack game in Python using Pygame with real-time rendering, dealer logic, hit/stand actions, score calculation, and bust detection, along with scalable card handling and multiple game states for smooth gameplay and replay support.',
       techStack: [
-        { name: 'Python', icon: `${publicUrl}/tech/python.svg` },
-        { name: 'Pygame', icon: `${publicUrl}/tech/pygame.png` },
-        { name: 'Git', icon: `${publicUrl}/tech/git.svg` }
+        { name: 'Python', icon: iconPython },
+        { name: 'Pygame', icon: iconPygame },
+        { name: 'Git', icon: iconGit }
       ],
       githubLink: 'https://github.com/arymn7/blackjack-pygame',
-      image: `${publicUrl}/project-blackjack.png`,
+      image: projectBlackjack,
       imageAlt: 'Playing cards illustration for a Blackjack game'
     },
     {
       title: 'Car Marketplace',
       description: 'A terminal-based Java application that allows users to list, search, buy, and sell vehicles through a text-based interface. Built with object-oriented design.',
       techStack: [
-        { name: 'Java', icon: `${publicUrl}/tech/java.svg` },
-        { name: 'Git', icon: `${publicUrl}/tech/git.svg` }
+        { name: 'Java', icon: iconJava },
+        { name: 'Git', icon: iconGit }
       ],
       githubLink: 'https://github.com/arymn7/car-marketplace',
-      image: `${publicUrl}/project-car.png`,
+      image: projectCar,
       imageAlt: 'Car marketplace project preview'
     },
     {
       title: 'Portfolio Website',
       description: 'Designed and built a responsive personal portfolio website with smooth section navigation, project highlights, and a clean visual system.',
       techStack: [
-        { name: 'React', icon: `${publicUrl}/tech/react.svg` },
-        { name: 'JavaScript', icon: `${publicUrl}/tech/javascript.svg` },
-        { name: 'CSS', icon: `${publicUrl}/tech/css.svg` },
-        { name: 'HTML', icon: `${publicUrl}/tech/html.svg` },
-        { name: 'Git', icon: `${publicUrl}/tech/git.svg` }
+        { name: 'React', icon: iconReact },
+        { name: 'JavaScript', icon: iconJs },
+        { name: 'CSS', icon: iconCss },
+        { name: 'HTML', icon: iconHtml },
+        { name: 'Git', icon: iconGit }
       ],
       githubLink: 'https://github.com/arymn7/portfolio-website',
-      image: `${publicUrl}/project-portfolio.png`,
+      image: projectPortfolio,
       imageAlt: 'Portfolio website layout illustration'
     }
   ];
@@ -165,7 +180,7 @@ const Projects = () => {
           <div className="resume-viewer">
             <div className="resume-actions">
               <a
-                href={`${publicUrl}/Resume_AS.pdf`}
+                href={resumePdf}
                 className="resume-action"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -173,7 +188,7 @@ const Projects = () => {
                 View externally
               </a>
               <a
-                href={`${publicUrl}/Resume_AS.pdf`}
+                href={resumePdf}
                 className="resume-action secondary"
                 download
               >
@@ -183,7 +198,7 @@ const Projects = () => {
             <div className="resume-frame">
               <iframe
                 title="Resume PDF"
-                src={`${publicUrl}/Resume_AS.pdf#view=fitH`}
+                src={`${resumePdf}#view=fitH`}
                 loading="lazy"
               ></iframe>
             </div>
@@ -195,3 +210,7 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
+
+

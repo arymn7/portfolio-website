@@ -1,9 +1,32 @@
-ï»¿import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import iconC from '../assets/tech/C.svg';
+import iconCpp from '../assets/tech/cpp.svg';
+import iconPython from '../assets/tech/python.svg';
+import iconJava from '../assets/tech/java.svg';
+import iconHtml from '../assets/tech/html.svg';
+import iconCss from '../assets/tech/css.svg';
+import iconJs from '../assets/tech/javascript.svg';
+import iconRacket from '../assets/tech/racket.svg';
+import iconSql from '../assets/tech/sql.svg';
+import iconGit from '../assets/tech/git.svg';
+import iconPandas from '../assets/tech/pandas.svg';
+import iconScikitLearn from '../assets/tech/scikitlearn.svg';
+import iconNumpy from '../assets/tech/numpy.svg';
+import iconPygame from '../assets/tech/pygame.png';
+import iconReact from '../assets/tech/react.svg';
+import iconNode from '../assets/tech/nodejs.svg';
+import iconGithub from '../assets/tech/github.svg';
+import iconVscode from '../assets/tech/vscode.svg';
+import iconIntellij from '../assets/tech/intellij.svg';
+import iconPycharm from '../assets/tech/pycharm.svg';
+import iconLinux from '../assets/tech/linux.svg';
+import iconVim from '../assets/tech/vim.svg';
+import iconPowerbi from '../assets/tech/powerbi.svg';
+import iconExcel from '../assets/tech/excel.svg';
 import './About.css';
 
 const About = () => {
   const aboutRef = useRef(null);
-  const publicUrl = process.env.PUBLIC_URL || '';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,30 +52,30 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: 'C', icon: `${publicUrl}/tech/c.svg` },
-    { name: 'C++', icon: `${publicUrl}/tech/cpp.svg` },
-    { name: 'Python', icon: `${publicUrl}/tech/python.svg` },
-    { name: 'Java', icon: `${publicUrl}/tech/java.svg` },
-    { name: 'HTML', icon: `${publicUrl}/tech/html.svg` },
-    { name: 'CSS', icon: `${publicUrl}/tech/css.svg` },
-    { name: 'JavaScript', icon: `${publicUrl}/tech/javascript.svg` },
-    { name: 'Racket', icon: `${publicUrl}/tech/racket.svg` },
-    { name: 'SQL', icon: `${publicUrl}/tech/sql.svg` },
-    { name: 'Git', icon: `${publicUrl}/tech/git.svg` },
-    { name: 'Pandas', icon: `${publicUrl}/tech/pandas.svg` },
-    { name: 'Scikit Learn', icon: `${publicUrl}/tech/scikitlearn.svg` },
-    { name: 'NumPy', icon: `${publicUrl}/tech/numpy.svg` },
-    { name: 'Pygame', icon: `${publicUrl}/tech/pygame.png` },
-    { name: 'React', icon: `${publicUrl}/tech/react.svg` },
-    { name: 'NodeJS', icon: `${publicUrl}/tech/nodejs.svg` },
-    { name: 'GitHub', icon: `${publicUrl}/tech/github.svg` },
-    { name: 'VS Code', icon: `${publicUrl}/tech/vscode.svg` },
-    { name: 'IntelliJ IDEA', icon: `${publicUrl}/tech/intellij.svg` },
-    { name: 'PyCharm', icon: `${publicUrl}/tech/pycharm.svg` },
-    { name: 'Linux', icon: `${publicUrl}/tech/linux.svg` },
-    { name: 'Vim', icon: `${publicUrl}/tech/vim.svg` },
-    { name: 'Power BI', icon: `${publicUrl}/tech/powerbi.svg` },
-    { name: 'Excel', icon: `${publicUrl}/tech/excel.svg` }
+    { name: 'C', icon: iconC },
+    { name: 'C++', icon: iconCpp },
+    { name: 'Python', icon: iconPython },
+    { name: 'Java', icon: iconJava },
+    { name: 'HTML', icon: iconHtml },
+    { name: 'CSS', icon: iconCss },
+    { name: 'JavaScript', icon: iconJs },
+    { name: 'Racket', icon: iconRacket },
+    { name: 'SQL', icon: iconSql },
+    { name: 'Git', icon: iconGit },
+    { name: 'Pandas', icon: iconPandas },
+    { name: 'Scikit Learn', icon: iconScikitLearn },
+    { name: 'NumPy', icon: iconNumpy },
+    { name: 'Pygame', icon: iconPygame },
+    { name: 'React', icon: iconReact },
+    { name: 'NodeJS', icon: iconNode },
+    { name: 'GitHub', icon: iconGithub },
+    { name: 'VS Code', icon: iconVscode },
+    { name: 'IntelliJ IDEA', icon: iconIntellij },
+    { name: 'PyCharm', icon: iconPycharm },
+    { name: 'Linux', icon: iconLinux },
+    { name: 'Vim', icon: iconVim },
+    { name: 'Power BI', icon: iconPowerbi },
+    { name: 'Excel', icon: iconExcel }
   ];
 
   return (
@@ -65,10 +88,10 @@ const About = () => {
         <div className="about-grid">
           <div className="about-copy">
             <p>
-              Iâ€™m a Computer Science student who loves algorithms, data science, and machine learning, especially when theyâ€™re used to solve real-world problems. I enjoy turning ideas into practical, well-structured software that feels intuitive to use and genuinely helps people.
+              I’m a Computer Science student who loves algorithms, data science, and machine learning, especially when they’re used to solve real-world problems. I enjoy turning ideas into practical, well-structured software that feels intuitive to use and genuinely helps people.
             </p>
             <p>
-              My work blends solid CS fundamentals with hands-on engineering experience. Iâ€™ve built machine-learning pipelines, interactive apps, and systems spanning Python, Java, and C++, and I care deeply about clean architecture, efficient data handling, and code quality. More than anything, I love learning, experimenting, and building tools that make a difference. 
+              My work blends solid CS fundamentals with hands-on engineering experience. I’ve built machine-learning pipelines, interactive apps, and systems spanning Python, Java, and C++, and I care deeply about clean architecture, efficient data handling, and code quality. More than anything, I love learning, experimenting, and building tools that make a difference. 
             </p>
           </div>
           <div className="about-panels">
@@ -112,3 +135,7 @@ const About = () => {
 };
 
 export default About;
+
+
+
+

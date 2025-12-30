@@ -1,10 +1,10 @@
-﻿import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import profilePhoto from '../assets/pfp.jpg';
 import './Home.css';
 
 const Home = () => {
   const homeRef = useRef(null);
   const [showScrollPrompt, setShowScrollPrompt] = useState(true);
-  const publicUrl = process.env.PUBLIC_URL || '';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -123,7 +123,7 @@ const Home = () => {
         <div className="home-right">
           <div className="profile-card">
             <img
-              src={`${publicUrl}/pfp.jpg`}
+              src={profilePhoto}
               alt="Aryaman Sharma"
               className="profile-photo"
             />
@@ -146,3 +146,5 @@ const Home = () => {
 };
 
 export default Home;
+
+
