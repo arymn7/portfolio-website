@@ -1,0 +1,134 @@
+﻿.education-section {
+  background-color: var(--bg-dark);
+  min-height: auto;
+  padding: 80px 20px;
+}
+
+.education-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.section-heading h2 {
+  font-family: var(--font-heading);
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 8px 0 0;
+}
+
+.section-eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.education-list {
+  display: grid;
+  gap: 24px;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.education-title {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.education-degree {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 6px;
+}
+
+.education-university {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0 0 4px;
+}
+
+.education-location {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.education-period {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.education-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 20px;
+}
+
+.education-pill {
+  font-size: 12px;
+  color: var(--purple-primary);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(138, 43, 226, 0.12);
+}
+
+.education-courses h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-tag {
+  font-size: 12px;
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+@media (max-width: 768px) {
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-degree {
+    font-size: 20px;
+  }
+}

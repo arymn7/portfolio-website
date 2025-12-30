@@ -1,0 +1,66 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root {
+  --bg-black: #0B0B0F;
+  --bg-dark: #121217;
+  --purple-primary: #8A2BE2;
+  --purple-hover: #A855F7;
+  --purple-glow: rgba(138, 43, 226, 0.3);
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --text-muted: #808080;
+  --border-color: rgba(138, 43, 226, 0.2);
+  --shadow-purple: 0 0 20px rgba(138, 43, 226, 0.5);
+  --font-body: "Sora", "Segoe UI", sans-serif;
+  --font-heading: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-black);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Ensure all interactive elements use custom cursor */
+a, button, .contact-button, .resume-button, .github-link, 
+.scroll-indicator, .navbar-logo, .navbar-menu a {
+  cursor: none !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--purple-hover);
+}
