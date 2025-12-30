@@ -1,4 +1,4 @@
-﻿# Portfolio Website - Aryaman Sharma
+﻿# Portfolio Website - Aryaman
 
 A minimal, dark-themed, responsive tech portfolio built with React.
 
