@@ -67,7 +67,7 @@ const Projects = () => {
         { name: 'Java', icon: '/tech/java.svg' },
         { name: 'Git', icon: '/tech/git.svg' }
       ],
-      githubLink: '#',
+      githubLink: 'https://github.com/arymn7/car-marketplace',
       image: '/project-car.png',
       imageAlt: 'Car marketplace project preview'
     },
@@ -81,7 +81,7 @@ const Projects = () => {
         { name: 'HTML', icon: '/tech/html.svg' },
         { name: 'Git', icon: '/tech/git.svg' }
       ],
-      githubLink: '#',
+      githubLink: 'https://github.com/arymn7/portfolio-website',
       image: '/project-portfolio.png',
       imageAlt: 'Portfolio website layout illustration'
     }
