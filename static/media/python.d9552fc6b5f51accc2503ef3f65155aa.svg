@@ -1,63 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    version="1.0"
    id="svg2"
-   sodipodi:version="0.32"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="python-logo-only.svg"
    width="83.371017pt"
    height="101.00108pt"
-   inkscape:export-filename="python-logo-only.png"
-   inkscape:export-xdpi="232.44"
-   inkscape:export-ydpi="232.44"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <metadata
-     id="metadata371">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <sodipodi:namedview
-     inkscape:window-height="2080"
-     inkscape:window-width="1976"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     guidetolerance="10.0"
-     gridtolerance="10.0"
-     objecttolerance="10.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     id="base"
-     inkscape:zoom="2.1461642"
-     inkscape:cx="91.558698"
-     inkscape:cy="47.9926"
-     inkscape:window-x="1092"
-     inkscape:window-y="72"
-     inkscape:current-layer="svg2"
-     width="210mm"
-     height="40mm"
-     units="mm"
-     inkscape:showpageshadow="2"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="pt"
-     showgrid="false"
-     inkscape:window-maximized="0" />
+   xmlns="http://www.w3.org/2000/svg">
+  
+  
   <defs
      id="defs4">
     <linearGradient
@@ -132,7 +82,7 @@
        x2="-65.308502"
        y2="144.75717"
        id="linearGradient2987"
-       xlink:href="#linearGradient4671"
+       href="#linearGradient4671"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(100.2702,99.61116)" />
     <linearGradient
@@ -141,12 +91,11 @@
        x2="26.670298"
        y2="76.313133"
        id="linearGradient2990"
-       xlink:href="#linearGradient4689"
+       href="#linearGradient4689"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(100.2702,99.61116)" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4689"
+       href="#linearGradient4689"
        id="linearGradient2587"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(100.2702,99.61116)"
@@ -155,8 +104,7 @@
        x2="26.670298"
        y2="76.313133" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4671"
+       href="#linearGradient4671"
        id="linearGradient2589"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(100.2702,99.61116)"
@@ -165,8 +113,7 @@
        x2="-65.308502"
        y2="144.75717" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4689"
+       href="#linearGradient4689"
        id="linearGradient2248"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(100.2702,99.61116)"
@@ -175,8 +122,7 @@
        x2="26.670298"
        y2="76.313133" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4671"
+       href="#linearGradient4671"
        id="linearGradient2250"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(100.2702,99.61116)"
@@ -185,8 +131,7 @@
        x2="-65.308502"
        y2="144.75717" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4671"
+       href="#linearGradient4671"
        id="linearGradient2255"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.562541,0,0,0.567972,-11.5974,-7.60954)"
@@ -195,8 +140,7 @@
        x2="-65.308502"
        y2="144.75717" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4689"
+       href="#linearGradient4689"
        id="linearGradient2258"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.562541,0,0,0.567972,-11.5974,-7.60954)"
@@ -205,8 +149,7 @@
        x2="26.670298"
        y2="76.313133" />
     <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2795"
+       href="#linearGradient2795"
        id="radialGradient2801"
        cx="61.518883"
        cy="132.28575"
@@ -216,8 +159,7 @@
        gradientTransform="matrix(1,0,0,0.177966,0,108.7434)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4671"
+       href="#linearGradient4671"
        id="linearGradient1475"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.562541,0,0,0.567972,-14.99112,-11.702371)"
@@ -226,8 +168,7 @@
        x2="112.03144"
        y2="137.27299" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4689"
+       href="#linearGradient4689"
        id="linearGradient1478"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.562541,0,0,0.567972,-14.99112,-11.702371)"
@@ -236,8 +177,7 @@
        x2="135.66525"
        y2="114.39767" />
     <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2795"
+       href="#linearGradient2795"
        id="radialGradient1480"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.7490565e-8,-0.23994696,1.054668,3.7915457e-7,-83.7008,142.46201)"
@@ -263,3 +203,4 @@
      rx="35.930977"
      ry="6.9673119" />
 </svg>
+

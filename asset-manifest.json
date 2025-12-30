@@ -1,13 +1,43 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.c3bc60d9.css",
-    "main.js": "/portfolio-website/static/js/main.8c6cd53c.js",
+    "main.js": "/portfolio-website/static/js/main.1f03b01b.js",
+    "static/media/project-portfolio.png": "/portfolio-website/static/media/project-portfolio.859fda2c049813b0d157.png",
+    "static/media/project-car.png": "/portfolio-website/static/media/project-car.20b6057972e5f650aa4c.png",
+    "static/media/Resume_AS.pdf": "/portfolio-website/static/media/Resume_AS.29b3e5921b59e639964f.pdf",
+    "static/media/project-blackjack.png": "/portfolio-website/static/media/project-blackjack.61e925874074eba53fc1.png",
+    "static/media/project-heart.png": "/portfolio-website/static/media/project-heart.b8ef170d3639cd7bae25.png",
+    "static/media/pygame.png": "/portfolio-website/static/media/pygame.0ffd0cd567d2883c3ef9.png",
+    "static/media/pfp.jpg": "/portfolio-website/static/media/pfp.55428cbfffd8fbb540da.jpg",
+    "static/media/linux.svg": "/portfolio-website/static/media/linux.8b726be9940b915264277ec052c8f769.svg",
+    "static/media/python.svg": "/portfolio-website/static/media/python.d9552fc6b5f51accc2503ef3f65155aa.svg",
+    "static/media/scikitlearn.svg": "/portfolio-website/static/media/scikitlearn.8e1d0731b49a4cf3b7c63a10fc906b47.svg",
+    "static/media/vim.svg": "/portfolio-website/static/media/vim.285f003ca0534bc4245a20509729aee2.svg",
+    "static/media/vscode.svg": "/portfolio-website/static/media/vscode.76584f6dd1f371c3b2be2eb4149929b7.svg",
+    "static/media/intellij.svg": "/portfolio-website/static/media/intellij.cd8655d13029e23e01c4ab5c5ec681a6.svg",
+    "static/media/pycharm.svg": "/portfolio-website/static/media/pycharm.09820060ac970fdeaa65b80c7f9e6e96.svg",
+    "static/media/nodejs.svg": "/portfolio-website/static/media/nodejs.10621b066180fcb5c215ca01678d95c3.svg",
+    "static/media/java.svg": "/portfolio-website/static/media/java.558186a69755a0ddca7da747c45f1bef.svg",
+    "static/media/excel.svg": "/portfolio-website/static/media/excel.05687dce8544b72eaa500389393a4753.svg",
+    "static/media/powerbi.svg": "/portfolio-website/static/media/powerbi.65a21a9bf4ceac2e821b8a504cf5f455.svg",
+    "static/media/C.svg": "/portfolio-website/static/media/C.d99d3041c42b657b432092cf8788f41a.svg",
+    "static/media/cpp.svg": "/portfolio-website/static/media/cpp.eacf46bb5aac13f04d5d9b5398256135.svg",
+    "static/media/numpy.svg": "/portfolio-website/static/media/numpy.e11d19d7ca7380a74640cd941143a2e6.svg",
+    "static/media/github.svg": "/portfolio-website/static/media/github.5671f7d7f2680c589cba5cd7f248ab81.svg",
+    "static/media/javascript.svg": "/portfolio-website/static/media/javascript.9a2017379e3756212ae19051b87f4c7a.svg",
+    "static/media/sql.svg": "/portfolio-website/static/media/sql.9f4c70a45cec7c04f808ce0359a13a16.svg",
     "index.html": "/portfolio-website/index.html",
+    "static/media/html.svg": "/portfolio-website/static/media/html.5ffe58d35497fa5b5a3c58806ecffe50.svg",
+    "static/media/git.svg": "/portfolio-website/static/media/git.b34321760c4ccc7b6f495e02d014f037.svg",
+    "static/media/racket.svg": "/portfolio-website/static/media/racket.85c96baadba0e59c09b486b021fbf38d.svg",
+    "static/media/pandas.svg": "/portfolio-website/static/media/pandas.d39e9650ffaa495d4e7941595fbce984.svg",
+    "static/media/css.svg": "/portfolio-website/static/media/css.9b076d59dc62b9f327b0497ec2a05e2e.svg",
+    "static/media/react.svg": "/portfolio-website/static/media/react.0fea7b7cbe87d2775e71f6bf74e49abd.svg",
     "main.c3bc60d9.css.map": "/portfolio-website/static/css/main.c3bc60d9.css.map",
-    "main.8c6cd53c.js.map": "/portfolio-website/static/js/main.8c6cd53c.js.map"
+    "main.1f03b01b.js.map": "/portfolio-website/static/js/main.1f03b01b.js.map"
   },
   "entrypoints": [
     "static/css/main.c3bc60d9.css",
-    "static/js/main.8c6cd53c.js"
+    "static/js/main.1f03b01b.js"
   ]
 }
