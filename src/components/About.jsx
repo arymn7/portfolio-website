@@ -88,10 +88,10 @@ const About = () => {
         <div className="about-grid">
           <div className="about-copy">
             <p>
-              I’m a Computer Science student who loves algorithms, data science, and machine learning, especially when they’re used to solve real-world problems. I enjoy turning ideas into practical, well-structured software that feels intuitive to use and genuinely helps people.
+              I'm a Computer Science student who loves algorithms, data science, and machine learning, especially when they're used to solve real-world problems. I enjoy turning ideas into practical, well-structured software that feels intuitive to use and genuinely helps people.
             </p>
             <p>
-              My work blends solid CS fundamentals with hands-on engineering experience. I’ve built machine-learning pipelines, interactive apps, and systems spanning Python, Java, and C++, and I care deeply about clean architecture, efficient data handling, and code quality. More than anything, I love learning, experimenting, and building tools that make a difference. 
+              My work blends solid CS fundamentals with hands-on engineering experience. I've built machine-learning pipelines, interactive apps, and systems spanning Python, Java, and C++, and I care deeply about clean architecture, efficient data handling, and code quality. More than anything, I love learning, experimenting, and building tools that make a difference. 
             </p>
           </div>
           <div className="about-panels">
