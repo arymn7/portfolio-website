@@ -2,7 +2,7 @@
 
 A minimal, dark-themed, responsive tech portfolio built with React.
 
-## 🚀 Check it out
+## Check it out
 
 My portfolio website is live here:
 
