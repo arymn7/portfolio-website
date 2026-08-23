@@ -4,10 +4,6 @@ A minimal, dark-themed, responsive tech portfolio built with React.
 
 ## Check it out
 
-My portfolio website is live here:
-
-🔗 **https://arymn7.github.io/portfolio-website**
-
 ## Features
 
 - Clean, two-column hero with profile image
