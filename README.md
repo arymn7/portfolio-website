@@ -49,7 +49,8 @@ npm run build
 
 ### Profile image
 
-Replace `public/pfp.jpg` with your own photo.
+Replace `src/assets/pfp.jpg` with your own photo. The image is imported by
+`src/components/Home.jsx`, so keep the filename unchanged or update the import.
 
 ### Projects
 
@@ -57,7 +58,9 @@ Edit the `projects` array in `src/components/Projects.jsx` to change titles, des
 
 ### Resume
 
-Replace `public/Resume_AS.pdf` with your own resume file. The Resume tab embeds this file and provides download/external links.
+Replace `src/assets/Resume_AS_2025.pdf` with your own resume file. The file is
+imported by `src/components/Projects.jsx`; keep the filename unchanged or update
+the import. The Resume tab embeds the PDF and provides download/external links.
 
 ### Contact links
 
@@ -73,9 +76,12 @@ Theme variables and fonts live in `src/index.css`.
 portfolio-website/
   public/
     index.html
-    Resume_AS.pdf
-    pfp.jpg
   src/
+    assets/
+      pfp.jpg
+      Resume_AS_2025.pdf
+      project-*.png
+      tech/
     components/
       About.jsx
       Contact.jsx
