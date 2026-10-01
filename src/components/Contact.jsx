@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Contact.css';
 
 const Contact = () => {
@@ -16,13 +16,15 @@ const Contact = () => {
       { threshold: 0.1 }
     );
 
-    if (contactRef.current) {
-      observer.observe(contactRef.current);
+    const contactElement = contactRef.current;
+
+    if (contactElement) {
+      observer.observe(contactElement);
     }
 
     return () => {
-      if (contactRef.current) {
-        observer.unobserve(contactRef.current);
+      if (contactElement) {
+        observer.unobserve(contactElement);
       }
     };
   }, []);

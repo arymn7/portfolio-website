@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Education.css';
 
 const Education = () => {
@@ -16,32 +16,32 @@ const Education = () => {
       { threshold: 0.1 }
     );
 
-    if (educationRef.current) {
-      observer.observe(educationRef.current);
+    const educationElement = educationRef.current;
+
+    if (educationElement) {
+      observer.observe(educationElement);
     }
 
     return () => {
-      if (educationRef.current) {
-        observer.unobserve(educationRef.current);
+      if (educationElement) {
+        observer.unobserve(educationElement);
       }
     };
   }, []);
 
   const education = [
     {
-      degree: 'Bachelor of Computer Science (Honours Co-op)',
+      degree: 'Honours Bachelor of Computer Science (Co-op)',
       university: 'University of Waterloo',
       location: 'Waterloo, Ontario',
-      period: '2025 - 2030',
-      highlights: ['President\'s Scholarship of Distinction', '1A Term Distinction'],
+      period: 'Sep 2025 - Apr 2030 (expected)',
+      highlights: ['President\'s Scholarship of Distinction'],
       courses: [
-        'Elementary Algorithm Design and Data Abstraction',
-        'Designing Functional Programs',
-        'Calculus 1 & 2',
-        'Algebra with Proofs',
-        'Linear Algebra 1',
-        'Tools/Techniques for Software Development',
-        'Introduction to Microeconomics'
+        'Object-Oriented Programming',
+        'Data Structures & Algorithms',
+        'Computation',
+        'Probability',
+        'Linux'
       ]
     }
   ];

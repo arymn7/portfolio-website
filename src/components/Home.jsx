@@ -18,13 +18,15 @@ const Home = () => {
       { threshold: 0.1 }
     );
 
-    if (homeRef.current) {
-      observer.observe(homeRef.current);
+    const homeElement = homeRef.current;
+
+    if (homeElement) {
+      observer.observe(homeElement);
     }
 
     return () => {
-      if (homeRef.current) {
-        observer.unobserve(homeRef.current);
+      if (homeElement) {
+        observer.unobserve(homeElement);
       }
     };
   }, []);
@@ -55,11 +57,11 @@ const Home = () => {
             Aryaman
             <span className="name-accent">Sharma</span>
           </h1>
-          <p className="subtitle">Aspiring Software Engineer focused on ML, AI, and full-stack systems.</p>
+          <p className="subtitle">Software engineer building practical, high-performance full-stack systems.</p>
           <p className="intro-text">
-            I have a strong interest in algorithms, data science, and machine learning,
-            with a focus on applying these tools to real-world challenges. I enjoy designing
-            and building software solutions that are both impactful and meaningful.
+            I turn real business needs into reliable software using Python, JavaScript,
+            databases, and cloud technologies. I enjoy shipping thoughtful products,
+            improving system performance, and collaborating closely with the people who use them.
           </p>
           <div className="social-links">
             <a

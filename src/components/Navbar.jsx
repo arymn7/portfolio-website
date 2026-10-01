@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 30);
 
-      const sections = ['home', 'projects', 'education', 'about', 'contact'];
+      const sections = ['home', 'projects', 'experience', 'education', 'about', 'contact'];
       const current = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -68,6 +68,18 @@ const Navbar = () => {
               }}
             >
               Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              className={activeSection === 'experience' ? 'active' : ''}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('experience');
+              }}
+            >
+              Experience
             </a>
           </li>
           <li>

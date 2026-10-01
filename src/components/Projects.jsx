@@ -1,20 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react';
 import projectHeart from '../assets/project-heart.png';
-import projectBlackjack from '../assets/project-blackjack.png';
+import projectRentscope from '../assets/project-rentscope.webp';
 import projectCar from '../assets/project-car.png';
-import projectPortfolio from '../assets/project-portfolio.png';
-import resumePdf from '../assets/Resume_AS_2025.pdf';
+import projectAgentigram from '../assets/project-agentigram.jpeg';
+import resumePdf from '../assets/Resume_Aryaman_Sharma.pdf';
 import iconPython from '../assets/tech/python.svg';
 import iconNumpy from '../assets/tech/numpy.svg';
 import iconPandas from '../assets/tech/pandas.svg';
 import iconScikitLearn from '../assets/tech/scikitlearn.svg';
 import iconGit from '../assets/tech/git.svg';
-import iconPygame from '../assets/tech/pygame.png';
 import iconJava from '../assets/tech/java.svg';
-import iconReact from '../assets/tech/react.svg';
-import iconJs from '../assets/tech/javascript.svg';
-import iconCss from '../assets/tech/css.svg';
-import iconHtml from '../assets/tech/html.svg';
+import iconNext from '../assets/tech/nextjs.svg';
+import iconTypeScript from '../assets/tech/typescript.svg';
+import iconFastApi from '../assets/tech/fastapi.svg';
+import iconGemini from '../assets/tech/gemini.svg';
+import iconMongoDb from '../assets/tech/mongodb.svg';
+import iconMcp from '../assets/tech/mcp.svg';
+import iconNode from '../assets/tech/nodejs.svg';
+import iconHolepunch from '../assets/tech/holepunch.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -33,13 +36,15 @@ const Projects = () => {
       { threshold: 0.1 }
     );
 
-    if (projectsRef.current) {
-      observer.observe(projectsRef.current);
+    const projectsElement = projectsRef.current;
+
+    if (projectsElement) {
+      observer.observe(projectsElement);
     }
 
     return () => {
-      if (projectsRef.current) {
-        observer.unobserve(projectsRef.current);
+      if (projectsElement) {
+        observer.unobserve(projectsElement);
       }
     };
   }, []);
@@ -65,16 +70,19 @@ const Projects = () => {
       imageAlt: 'Heart disease prediction dashboard illustration'
     },
     {
-      title: 'Rentscope',
+      title: 'RentScope',
       description: 'RentScope is a map-first assistant that helps students choose neighbourhoods by visualizing rent, commute, safety signals, and amenities; producing ranked, explainable recommendations instead of scattered listings.',
       techStack: [
-        { name: 'Python', icon: iconPython },
-        { name: 'React', icon: iconReact },
-        { name: 'Git', icon: iconGit }
+        { name: 'Next.js', icon: iconNext, monochrome: true },
+        { name: 'TypeScript', icon: iconTypeScript, monochrome: true },
+        { name: 'FastAPI', icon: iconFastApi, monochrome: true },
+        { name: 'Gemini', icon: iconGemini, monochrome: true },
+        { name: 'MongoDB', icon: iconMongoDb, monochrome: true },
+        { name: 'MCP', icon: iconMcp, monochrome: true }
       ],
       githubLink: 'https://github.com/arymn7/rentscope',
-      image: projectBlackjack,
-      imageAlt: 'Playing cards illustration for a Blackjack game'
+      image: projectRentscope,
+      imageAlt: 'RentScope project preview'
     },
     {
       title: 'Car Marketplace',
@@ -88,18 +96,19 @@ const Projects = () => {
       imageAlt: 'Car marketplace project preview'
     },
     {
-      title: 'Portfolio Website',
-      description: 'Responsive personal portfolio website with smooth section navigation, project highlights, and a clean visual system.',
+      title: 'Agentigram',
+      description: 'Built a peer-to-peer coordination layer that helps AI coding agents across different computers detect conflicting changes, negotiate contracts, and enforce file ownership before merge conflicts occur. Winner of Tether’s Best Sovereign App at Hack the North 2026.',
       techStack: [
-        { name: 'React', icon: iconReact },
-        { name: 'JavaScript', icon: iconJs },
-        { name: 'CSS', icon: iconCss },
-        { name: 'HTML', icon: iconHtml },
-        { name: 'Git', icon: iconGit }
+        { name: 'TypeScript', icon: iconTypeScript, monochrome: true },
+        { name: 'Node.js', icon: iconNode },
+        { name: 'Next.js', icon: iconNext, monochrome: true },
+        { name: 'MCP', icon: iconMcp, monochrome: true },
+        { name: 'Hyperswarm', icon: iconHolepunch },
+        { name: 'Hypercore', icon: iconHolepunch }
       ],
-      githubLink: 'https://github.com/arymn7/portfolio-website',
-      image: projectPortfolio,
-      imageAlt: 'Portfolio website layout illustration'
+      githubLink: 'https://github.com/ParthB21/agentigram',
+      image: projectAgentigram,
+      imageAlt: 'Agentigram logo with connected agents graphic'
     }
   ];
 
@@ -134,8 +143,8 @@ const Projects = () => {
           hidden={activeTab !== 'projects'}
         >
           <div className="projects-grid">
-            {projects.map((project, index) => (
-              <div key={index} className="project-card">
+            {projects.map((project) => (
+              <article key={project.title} className="project-card">
                 <div className="project-image">
                   <img src={project.image} alt={project.imageAlt} loading="lazy" />
                 </div>
@@ -144,7 +153,12 @@ const Projects = () => {
                 <div className="project-tech">
                   {project.techStack.map((tech) => (
                     <div key={tech.name} className="project-tech-item">
-                      <img src={tech.icon} alt={`${tech.name} logo`} loading="lazy" />
+                      <img
+                        src={tech.icon}
+                        alt=""
+                        className={tech.monochrome ? 'monochrome' : ''}
+                        loading="lazy"
+                      />
                       <span>{tech.name}</span>
                     </div>
                   ))}
@@ -166,7 +180,7 @@ const Projects = () => {
                   </svg>
                   View on GitHub
                 </a>
-              </div>
+              </article>
             ))}
           </div>
         </div>
@@ -190,7 +204,7 @@ const Projects = () => {
               <a
                 href={resumePdf}
                 className="resume-action secondary"
-                download
+                download="Aryaman_Sharma_Resume.pdf"
               >
                 Download PDF
               </a>

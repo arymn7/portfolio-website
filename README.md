@@ -8,6 +8,7 @@ A minimal, dark-themed, responsive tech portfolio built with React.
 
 - Clean, two-column hero with profile image
 - Projects grid with tech chips and image previews
+- Professional experience timeline with measurable impact
 - Resume tab with in-page PDF viewer plus download/external link
 - Education, About, and Contact sections with structured content
 - Smooth section reveals and active nav highlighting
@@ -58,7 +59,7 @@ Edit the `projects` array in `src/components/Projects.jsx` to change titles, des
 
 ### Resume
 
-Replace `src/assets/Resume_AS_2025.pdf` with your own resume file. The file is
+Replace `src/assets/Resume_Aryaman_Sharma.pdf` with your own resume file. The file is
 imported by `src/components/Projects.jsx`; keep the filename unchanged or update
 the import. The Resume tab embeds the PDF and provides download/external links.
 
@@ -79,13 +80,14 @@ portfolio-website/
   src/
     assets/
       pfp.jpg
-      Resume_AS_2025.pdf
-      project-*.png
+      Resume_Aryaman_Sharma.pdf
+      project-*.*
       tech/
     components/
       About.jsx
       Contact.jsx
       Education.jsx
+      Experience.jsx
       Home.jsx
       Navbar.jsx
       Projects.jsx
